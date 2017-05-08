@@ -1,7 +1,7 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 
-const Header = () => (
+const Navigation = () => (
     <div>rfsdfgdsfgsdfg</div>
 );
 
-export default Header;
+export default Navigation;
