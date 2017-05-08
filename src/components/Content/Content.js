@@ -47,9 +47,10 @@ const Positions = () => {
 
 const Content = () => (
     <div>
-        <CareersText/>
-        <LocationSelector/>
-        <Positions/>
+        <CareersText className="flex-container"/>
+        <LocationSelector className="flex-container"/>
+        <div className="linebreake"/>
+        <Positions className="flex-container"/>
     </div>
 );
 
