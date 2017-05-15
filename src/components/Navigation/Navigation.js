@@ -13,8 +13,10 @@ const Navigation = () => (
     <div className="navigation">
         <div className="navigation-wrapper">
             <Logo />
-            <LanguageToggler />
+            <div className="buttons">
+            <Bttn><LanguageToggler /></Bttn>
             <Bttn>=</Bttn>
+            </div>
         </div>
     </div>
 );
