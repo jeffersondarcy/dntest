@@ -1,12 +1,38 @@
-.flex-container {
-  display: -webkit-flex;
-  display: flex;
-  width: 1000px;
-  justify-content: space-between;
+.App {
+  padding: 0 130px 30px;
 }
 
 .bold-text {
   font-weight: 800;
+}
+
+.leftCol{
+  margin-right:auto
+}
+
+.content-box {
+  margin-bottom: 50px;
+}
+
+.select-city {
+  width: 50%;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jobs-table div {
+  display: -webkit-flex;
+  display: flex;
+  justify-content:flex-end;
+}
+
+.bold-hr {
+  height: 2px;
+  background-color: black;
+  border: none;
 }
 
 .navigation {
@@ -36,5 +62,5 @@
   height: 25px;
   width: 25px;
   color: whitesmoke;
-  text-align: right;
+  justify-content:flex-end;
 }

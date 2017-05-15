@@ -10,9 +10,9 @@ const CareersText = () => (
 const LocationSelector = () => {
     const locations = ['Munich', 'Hamburg', 'Berlin'];
     return (
-        <div>
-            <h2>Current openings</h2>
-            <select>
+        <div className="content-box">
+            <h2 className="header">Current openings</h2>
+            <select className="select-city">
                 { locations.map((element, index) => <option key={index} value={index}>{element}</option>)}
             </select>
         </div>
@@ -28,17 +28,21 @@ const Positions = () => {
 
     return (
         <div>
-            <div>
-                <div className="leftCol bold-text">Position</div>
-                <div className="rightCol bold-text">Location</div>
+            <div className="jobs-table">
+                <div>
+                    <div className="leftCol bold-text">Position</div>
+                    <div className="rightCol bold-text">Location</div>
+                </div>
                 <hr />
             </div>
             { openPositions.map((element, index) => (
-                        <div key={index} >
+                    <div key={index} className="jobs-table">
+                        <div>
                             <div className="leftCol">{element[0]}</div>
                             <div className="rightCol">{element[1]}</div>
-                            <hr />
                         </div>
+                        <hr />
+                    </div>
                 )
             ) }
         </div>
